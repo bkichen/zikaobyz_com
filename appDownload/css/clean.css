@@ -1,0 +1,90 @@
+body,p,h1,h2,h3,h4{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+img{
+	border: none;
+	vertical-align: middle;
+}
+a{
+	text-decoration: none;
+	color:#3c3c3c;
+}
+i{
+	font-style: normal;
+}
+input{
+	margin: 0rem;
+	padding: 0rem;
+	outline: none;
+}
+button{
+	outline: none;
+}
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.displaynone{
+	display: none;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.layer{
+	width:19.2rem;
+	margin: 0 auto;
+}
+.ml10{
+	margin-left: 0.1rem;
+}
+
+.mr10{
+	margin-right: 0.1rem;
+}
+
+.bgred{
+	background-color: rgb(255 50 51);
+}
+
+.bgwiter{
+	background-color: white;
+}
+
+.fontwiter{
+	color: white;
+}
+
+.fontblack{
+	color: black;
+}
+.fontsize20{
+	font-weight: bold;
+	font-size: 0.2rem;
+}
+.fontsize16{
+	font-size: 0.16rem;
+}
+.bgblue{
+	background-color: rgb(0 102 153);
+}
+.bgskyblue{
+	background-color: rgb(0 145 218);
+}
+/* 第二页面使用shadow */
+.shadow{
+	box-shadow: 0 0 0.3rem 0.01rem rgb(255 54 55);
+}
+/* 第三页面使用shadow1 */
+.shadow1{
+	box-shadow: 0 0 0.3rem 0.01rem rgb(0 145 218);
+}

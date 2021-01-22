@@ -1,0 +1,723 @@
+@import url("clean.css");
+
+@font-face {
+	font-family: 'iconfont';
+	src: url('../font/iconfont.eot');
+	src: url('../font/iconfont.eot#iefix') format('embedded-opentype'),
+		url('../font/iconfont.woff2') format('woff2'),
+		url('../font/iconfont.woff') format('woff'),
+		url('../font/iconfont.ttf') format('truetype'),
+		url('http://www.gzlhhg.com.cn/appDownload/font/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+	font-family: "iconfont" !important;
+	font-size: 0.2rem;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* first */
+#first {
+	position: relative;
+	background: url(../img/background_01.jpg) no-repeat;
+	background-size: 19.2rem;
+}
+	ul[z-index]{
+		display: none;
+	}
+	
+
+/* firstLeft */
+#first .left {
+	margin-left: 3.6rem;
+	margin-top: 1rem;
+}
+
+#first .left h1 {
+	height: 0.8rem;
+	width: 2.4rem;
+	line-height: 0.8rem;
+	font-size: 0.8rem;
+	font-family: Microsoft YaHei;
+	font-weight: bold;
+	padding-bottom: 0.45rem;
+}
+
+#first .left h2 {
+	height: 0.45rem;
+	width: 8.3rem;
+	color: rgb(127 127 127);
+	line-height: 0.45rem;
+	font-size: 0.44rem;
+	font-family: Microsoft YaHei;
+	font-weight: lighter;
+}
+
+#first .left .paddingleft {
+	padding-right: 0.01rem;
+}
+
+/* firstLeft涓璫etern*/
+#first .left .cetern {
+	margin-top: 0.55rem;
+	position: relative;
+	right: 0.15rem;
+	width: 4rem;
+	height: 1.55rem;
+}
+#first .left .cetern img{
+	width: 4rem;
+	height: 1.55rem;
+}
+/* 
+#first .left .cetern .text {
+	color: white;
+	font-size: 22px;
+	font-family: Microsoft YaHei;
+}
+
+#first .left .cetern .text .addfontsize {
+	font-size: 38px;
+	font-weight: bold;
+}
+ */
+/* foot */
+#first .left .foot {
+	width: 4.3rem;
+}
+
+/* footLeft */
+#first .left .foot .footleft img {
+	width: 1.9rem;
+	height: 1.9rem;
+}
+
+/* footRight */
+#first .left .foot .footright {
+	width: 2rem;
+	height: 1.7rem;
+}
+
+#first .footright .butoon {
+	width: 2.2rem;
+	height: 0.5rem;
+	border-radius: 0.45rem;
+	font-size: 0.2rem;
+	font-family: Microsoft YaHei;
+	line-height: 0.5rem;
+	border: 0.01rem solid;
+	border-color: rgb(211 211 211);
+	cursor: pointer;
+}
+
+#first .footright .butoon .download{
+	margin-left: 0.1rem;
+	text-align: center;
+}
+#first .footright .butoon .size{
+	display: inline-block;
+	width: 1.72rem;
+	height: 0.51rem;
+}
+#first .footright i {
+	font-size: 0.25rem;
+}
+
+#first .footright .download{
+	position: relative;
+	bottom: 0.02rem;
+}
+
+#first .footright .btntop {
+	margin-top: 0.1rem;
+}
+
+#first .footright .btncetern {
+	margin-top: 0.1rem;
+	margin-bottom: 0.1rem;
+}
+
+
+
+
+/* firstRight */
+#first .right img {
+	width: 6.2rem;
+	height: 5.2rem;
+}
+
+#first .right {
+	position: absolute;
+	left: 11.25rem;
+	top: 1.7rem;
+}
+
+.animated {
+	animation-duration: 1.5s;
+	animation-fill-mode: both
+}
+
+@keyframes fadeInDownT {
+	from {
+		opacity: 0;
+		transform: translate3d(80%, -100%, 0)
+	}
+
+	to {
+		opacity: 1;
+		transform: none
+	}
+}
+
+.fadeInDownT {
+	animation-name: fadeInDownT
+}
+
+@keyframes map {
+
+	50%,
+	from,
+	to {
+		opacity: 1
+	}
+
+	25%,
+	75% {
+		opacity: 0
+	}
+}
+
+@keyframes fadeInDown {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -100%, 0)
+	}
+
+	to {
+		opacity: 1;
+		transform: none
+	}
+}
+
+.fadeInDown {
+	animation-name: fadeInDown
+}
+
+#first .animatedfirst {
+	animation-duration: 1s;
+	animation-fill-mode: both
+}
+
+
+#first .fadefirst {
+	animation-name: fadeInfirst;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in-out;
+	visibility: visible !important
+}
+
+@keyframes fadeInfirst {
+	0% {
+		transform: scale(0);
+		opacity: 0
+	}
+
+	60% {
+		transform: scale(1.1)
+	}
+
+	80% {
+		transform: scale(.9);
+		opacity: 1
+	}
+
+	100% {
+		transform: scale(1);
+		opacity: 1
+	}
+}
+
+/* 第二页 */
+#second{
+	position: relative;
+	background: url(../img/background2_02.jpg) no-repeat;
+	background-size: 19.2rem;
+}
+
+#second .title{
+	text-align: center;
+	width: 19.2rem;
+	height: 0.45rem;
+	margin-top: 0.05rem;
+	font-family: Microsoft YaHei;
+	font-size: 0.4rem;
+}
+
+#second .dictum{
+	text-align: center;
+	margin-top: 0.3rem;
+	width: 19.2rem;
+	height: 0.2rem;
+	font-family: Microsoft YaHei;
+	font-size: 0.2rem;
+	line-height: 0.2rem;
+	color: rgb(127 127 127);
+}
+
+#second .secondbtn{
+	width: 2rem;
+	height: 0.5rem;
+	font-family: Microsoft YaHei;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+	line-height: 0.5rem;
+	border-radius: 0.9rem 0rem 0.9rem 0.9rem;
+}
+
+#second .secondbtn2{
+	width: 2.5rem;
+	height: 0.5rem;
+	font-family: Microsoft YaHei;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+	line-height: 0.5rem;
+	border-radius: 0.9rem 0rem 0.9rem 0.9rem;
+}
+
+/* 左边按钮 */
+#second .secondleft .btn1{
+	margin-left: 5rem;
+	margin-top: 1.7rem;
+}
+#second .secondleft .btn2{
+	margin-left: 5.5rem;
+	margin-top: 1.3rem;
+}
+#second .secondleft .btn3{
+	margin-left: 4.55rem;
+	margin-top: 0.8rem;
+}
+/* 右边按钮 */
+#second .secondright{
+	position: relative; 
+	left: 0.4rem;
+}
+#second .secondright .btn4{
+	margin-right: 5.4rem;
+	margin-top: 2.35rem;
+}
+#second .secondright .btn5{
+	margin-left: 0.8rem;
+	margin-top: 0.8rem;
+}
+#second .secondright .btn6{
+	margin-left: 0.4rem;
+	margin-top: 0.9rem;
+}
+
+/* 中间 */
+#second .secondcetern{
+	position: relative;
+	left: 1rem;
+	width: 2.26rem;
+	height: 4.01rem;
+	margin-top: 1.25rem;
+	overflow: hidden;
+}
+#second .secondcetern img{
+	width: 2.25rem;
+	height: auto;
+}
+#second .imgact1:hover{
+	height: 48rem;
+	width: 2.25rem;
+	animation-name: imgactive;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+/* 动态 */
+#second .s01 {
+	animation-delay: 0.3s;
+	
+}
+#second .s02 {
+	animation-delay: 0.6s;
+	
+}
+
+#second .s03 {
+	animation-delay: 0.9s;
+	
+}
+
+#second .s04 {
+	animation-delay: 1.2s;
+	
+}
+#second .s05 {
+	animation-delay: 1.5s;
+	
+}
+
+#second .s06 {
+	animation-delay: 1.8s;
+	
+}
+
+#second .animated {
+	animation-duration: 1s;
+	animation-fill-mode: both
+}
+
+
+#second .fadeIn2 {
+	animation-name: fadeIn2;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in-out;
+	visibility: visible !important
+}
+
+@keyframes fadeIn2 {
+	0% {
+		transform: scale(0);
+		opacity: 0
+	}
+
+	60% {
+		transform: scale(1.1)
+	}
+
+	80% {
+		transform: scale(.9);
+		opacity: 1
+	}
+
+	100% {
+		transform: scale(1);
+		opacity: 1
+	}
+}
+@keyframes imgactive{
+	from{
+		transform: translate(0rem,0rem);
+	}
+	to{
+		transform: translate(0rem,-24rem);
+	}
+}
+/* third */
+#third{
+	background: url(../img/background3_02.jpg) no-repeat;
+	background-size: 19.2rem;
+}
+
+#third .title{
+	text-align: center;
+	width: 19.2rem;
+	height: 0.45rem;
+	margin-top: 0.05rem;
+	font-family: Microsoft YaHei;
+	font-size: 0.4rem;
+}
+
+#third .dictum{
+	text-align: center;
+	margin-top: 0.3rem;
+	width: 19.2rem;
+	height: 0.2rem;
+	font-family: Microsoft YaHei;
+	font-size: 0.2rem;
+	line-height: 0.2rem;
+	color: rgb(127 127 127);
+}
+
+#third .thirdleft{
+	width: 2.85rem;
+	height: 5.01rem;
+	margin: 0rem auto;
+	margin-left: 5.55rem;
+	margin-top: 1.6rem;
+	overflow: hidden;
+}
+#third .thirdleft img{
+	width: 2.84rem;
+	height: auto;
+}
+
+/* 右边 */
+/* #third .thirdright{
+	position: relative;
+} */
+#third .thirdright .thirdbtn{
+	width: 1.8rem;
+	height: 1.8rem;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 50%;
+	border: 0.04rem solid rgb(198 238 254);
+}
+
+
+#third .thirdright img{
+	width: 1.2rem;
+	height: 0.9rem;
+}
+
+#third .thirdright .thirdbtn .text{
+	display: inline-block;
+	position: relative;
+	bottom: 0.9rem;
+	width: 1rem;
+	height: 0.25rem;
+	font-size: 0.2rem;
+}
+
+#third .thirdright .thirdbtn1{
+	margin-right: 6.9rem;
+	margin-top: 0.6rem;
+}
+#third .thirdright .thirdbtn2{
+	position: relative;
+	bottom: 0.35rem;
+	margin-left: 2.25rem;
+	
+}
+#third .thirdright .thirdbtn3{
+	margin-top: 0.35rem;
+	margin-left: 2.25rem;
+}
+#third .thirdright .thirdbtn4{
+	position: relative;
+	bottom: 0.35rem;
+}
+
+/* 动态 */
+#third .s01 {
+	
+	animation-delay: 1s;
+	
+}
+#third .s02 {
+	
+	animation-delay: 1.5s;
+	
+}
+
+#third .s03 {
+	
+	animation-delay: 2s;
+	
+}
+
+#third .s04 {
+	
+	animation-delay: 2.5s;
+	
+}
+
+#third .animated {
+	animation-duration: 1s;
+	animation-fill-mode: both
+}
+
+
+#third .fadeIn2 {
+	animation-name: fadeIn2;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in-out;
+	visibility: visible !important
+}
+
+#third .imgact2:hover{
+	height: 30rem;
+	width: 2.84rem;
+	animation-name: imgactive1;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+
+@keyframes fadeIn2 {
+	0% {
+		transform: scale(0);
+		opacity: 0
+	}
+
+	60% {
+		transform: scale(1.1)
+	}
+
+	80% {
+		transform: scale(.9);
+		opacity: 1
+	}
+
+	100% {
+		transform: scale(1);
+		opacity: 1
+	}
+}
+@keyframes imgactive1{
+	from{
+		transform: translate(0rem,0rem);
+	}
+	to{
+		transform: translate(0rem,-15rem);
+	}
+}
+
+/* fouth */
+#fouth{
+	background: url(../img/background4_02.jpg) no-repeat;
+	width: 19.2rem;
+}
+
+#fouth .left {
+	margin-left: 3.6rem;
+	margin-top: 1rem;
+}
+
+#fouth .left h1 {
+	height: 0.8rem;
+	width: 2.4rem;
+	line-height: 0.8rem;
+	font-size: 0.8rem;
+	font-family: Microsoft YaHei;
+	font-weight: bold;
+	padding-bottom: 0.45rem;
+}
+
+#fouth .left h2 {
+	height: 0.45rem;
+	width: 8.3rem;
+	color: rgb(127 127 127);
+	line-height: 0.45rem;
+	font-size: 0.44rem;
+	font-family: Microsoft YaHei;
+	font-weight: lighter;
+}
+
+#fouth .left .paddingleft {
+	padding-right: 0.01rem;
+}
+
+/* fouthLeft涓璫etern*/
+#fouth .left .cetern {
+	margin-top: 0.55rem;
+	position: relative;
+	right: 0.15rem;
+	width: 4rem;
+	height: 1.55rem;
+}
+#fouth .left .cetern img{
+	width: 4rem;
+	height: 1.55rem;
+}
+/* 
+#fouth .left .cetern .text {
+	color: white;
+	font-size: 22px;
+	font-family: Microsoft YaHei;
+}
+
+#fouth .left .cetern .text .addfontsize {
+	font-size: 38px;
+	font-weight: bold;
+}
+ */
+/* foot */
+#fouth .left .foot {
+	width: 4.3rem;
+}
+
+/* footLeft */
+#fouth .left .foot .footleft img {
+	width: 1.9rem;
+	height: 1.9rem;
+}
+
+/* footRight */
+#fouth .left .foot .footright {
+	width: 2rem;
+	height: 1.7rem;
+}
+
+#fouth .footright .butoon {
+	width: 2.2rem;
+	height: 0.5rem;
+	border-radius: 0.45rem;
+	font-size: 0.2rem;
+	font-family: Microsoft YaHei;
+	line-height: 0.5rem;
+	border: 0.01rem solid;
+	border-color: rgb(211 211 211);
+	cursor: pointer;
+}
+
+#fouth .footright .butoon .download{
+	margin-left: 0.1rem;
+	text-align: center;
+}
+#fouth .footright .butoon .size{
+	display: inline-block;
+	width: 1.72rem;
+	height: 0.51rem;
+}
+#fouth .footright i {
+	font-size: 0.25rem;
+}
+
+#fouth .footright .download{
+	position: relative;
+	bottom: 0.02rem;
+}
+
+#fouth .footright .btntop {
+	margin-top: 0.1rem;
+}
+
+#fouth .footright .btncetern {
+	margin-top: 0.1rem;
+	margin-bottom: 0.1rem;
+}
+
+
+#fouth .animatedfouth {
+	animation-duration: 1s;
+	animation-fill-mode: both
+}
+
+#fouth .fadefouth {
+	animation-name: fadeInfouth;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in-out;
+	visibility: visible !important
+}
+
+@keyframes fadeInfouth {
+	0% {
+		transform: scale(0);
+		opacity: 0
+	}
+
+	60% {
+		transform: scale(1.1)
+	}
+
+	80% {
+		transform: scale(.9);
+		opacity: 1
+	}
+
+	100% {
+		transform: scale(1);
+		opacity: 1
+	}
+}

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+	
+<html>
+<head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>在线咨询</title>
+        <link rel="stylesheet" type="text/css" href="../webim/1610525662/asset/webim/css/main.css">
+        <script type="text/javascript">
+    // 开始加载页面时间
+    var BEFORE_LOAD_TIME = (new Date()).getTime();
+    // domContentLoaded时间
+    var NB_DOM_CONTENT_LOADED_TIME = 0;
+    // window.onload时间
+    var NB_WINDOW_ONLOAD_TIME = 0;
+    // domContentLoaded 回调函数
+    var domContentReady = function () {
+        NB_DOM_CONTENT_LOADED_TIME = (new Date()).getTime();
+    };
+    // windowOnloaded 回调函数
+    var winLoadedReady = function () {
+        NB_WINDOW_ONLOAD_TIME = (new Date()).getTime();
+    };
+    // 绑定事件 区分IE浏览器
+    if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', domContentReady, false);
+        window.addEventListener('load', winLoadedReady, false);
+    }
+    // for IE
+    else {
+        document.attachEvent("onreadystatechange", function () {
+            if (document.readyState === 'complete') {
+                domContentReady();
+            }
+        });
+        window.attachEvent("onload", winLoadedReady);
+    }
+    
+    
+    </script>
+    <script src="../5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/jquery/jquery-1.10.2.min_f2fb5194.js"></script>
+    <script src="../5eN1bjq8AAUYm2zgoY3K/r/www/cache/ecom/esl/1-8-2/esl.js"></script>
+    <script>
+        require.config({
+        'baseUrl': '//sgoutong.baidu.com/webim/1610525662/asset/',
+        'packages': [
+            {
+                'name': 'im-core',
+                'location': '../dep/im-core/0.2.0/asset',
+                'main': 'main'
+            },
+            {
+                'name': 'im-lib',
+                'location': '../dep/im-lib/0.1.0/asset/pc',
+                'main': 'main'
+            },
+            {
+                'name': 'im-filter',
+                'location': '../dep/im-filter/0.1.0/asset',
+                'main': 'main'
+            },
+            {
+                'name': 'im-editor',
+                'location': '../dep/im-editor/0.1.0/asset',
+                'main': 'main'
+            },
+            {
+                'name': 'etpl',
+                'location': '../dep/etpl/3.0.0/asset',
+                'main': 'main'
+            },
+            {
+                'name': 'bull',
+                'location': '../dep/bull/asset',
+                'main': 'main'
+            },
+            {
+                'name': 'webuploader',
+                'location': '../dep/webuploader/',
+                'main': 'webuploader'
+            },
+            {
+                'name': 'common',
+                'location': './common'
+            }
+        ]
+    });
+    </script>
+</head>
+<body class="">
+    <div class="header  header-widthlogo">
+        <!--
+        <img src="//sgoutong.baidu.com/webim/1610525662/asset/webim/img/clhead.png">
+        -->
+                                    <div class="company-logo" style="background-image:url(../static/style/images/bf68875556f441e28952851b72763e85.png);"></div>
+                                                                    <div class="company-container" style="padding-top: 23px;">
+                                                        <span class="company">
+                    广东自考网
+                </span><br>
+                                        <span class="tel">
+                    
+                </span>
+                            </div>
+        <button class="end-chat js-end-chat">结束沟通</button>
+    </div>
+    <div id="body">
+        <div id="sidebar" class="aside">
+            <div class="aside-wrap">
+                <!-- 暂定内容, 使用style -->
+                <div class="business-info">
+                    <div id="bannerContainer">
+                                            </div>
+                                                                        <div class="slogan-cont" style="overflow-y: auto;">
+                                <p>广东地区自考网</p><p><strong>服务项目：</strong></p><p>自学考试</p><p>助学自考</p><p>成人高考</p><p>远程教育</p><p>专本套读</p><p>自考培训</p><p><br></p><p><br></p><p><strong>公众号：</strong><br></p><p>扫描上方二维码，第一时间掌握自考政策信息及资讯！</p><p><br></p><p><strong>考生交流群：</strong></p><p><a src="http://www.gzlhhg.com.cn/weixin.html" href="../weixin.html">http://www.gzlhhg.com.cn/weixin.html</a> </p><p><br></p>
+                            </div>
+                                                                <!-- //<div class="technical_support"><span class="support_icon"></span>咨询软件由爱番番免费提供</div> -->
+                </div>
+                <!-- end -->
+                <!-- 文件传输 -->
+                <div id="fileTransfer" class="file_transfer file_transfer_hide">
+                    <h3 class="file_transfer_title">文件传输</h3>
+                    <ul class="file_transfer_content"></ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="main" class="main">
+
+            <div class="aware-fraud-tip" id="awareFraudWrap">
+                <img src="../r/image/pc-icon.png" class=" aware-fraud-tip-icon">
+                <span>最近诈骗案件频发，谨防诈骗，</span>
+                <span id="awareFraud" class="aware-fraud-tip-check">查看《服务声明》</span>
+                <img src="../r/image/pc-close-icon.png" id="awareFraudClose" class="aware-fraud-close">
+            </div>
+
+            <div id="message" class="message">
+                                <div id="status" class="info"><span>正在等待客服接起...</span></div>
+            </div>
+
+            <div id="toolbar" class="toolbar">
+                <div class="h-split-m" style="visibility: hidden;">
+                    <div class="h-split-l"><div class="h-split-r"><!----></div></div>
+                </div>
+                <div class="font sub-bar">
+                    <div class="familyselect">
+                        <select class="family">
+                            <option value="微软雅黑,arial">微软雅黑</option>
+                            <option value="宋体">宋体</option>
+                            <option value="楷体,arial">楷体</option>
+                            <option value="黑体,arial">黑体</option>
+                            <option value="隶书,arial">隶书</option>
+                            <option value="Arial">Arial</option>
+                            <option value="Roman">Roman</option>
+                        </select>
+                    </div>
+                    <div class="sizeselect">
+                        <select class="size">
+                            <option value="8pt">8</option>
+                            <option value="10pt" selected="">10</option>
+                            <option value="12pt">12</option>
+                            <option value="14pt">14</option>
+                            <option value="16pt">16</option>
+                            <option value="18pt">18</option>
+                            <option value="24pt">24</option>
+                        </select>
+                    </div>
+                    <span class="bold" title="加粗">B</span>
+                    <span class="italic" title="斜体">I</span>
+                    <span class="underline" title="下划线">U</span>
+                    <span class="font-color" title="字体颜色"></span>
+                    <div class="c-tip-arrow">
+                        <em></em>
+                        <ins></ins>
+                    </div>
+                </div>
+                <div class="color sub-bar sub-bar-2">
+                    <ul class="color-container clear-fix">
+                        <li class="color-item-wrapper color-item-select" style="border-color:#000000">
+                            <span class="color-item" style="background-color:#000000" color="#000000"></span>
+                        </li>
+                        <li class="color-item-wrapper" style="border-color:#7f8003">
+                            <span class="color-item" style="background-color:#7f8003" color="#7f8003"></span>
+                        </li>
+                        <li class="color-item-wrapper" style="border-color:#808080">
+                            <span class="color-item" style="background-color:#808080" color="#808080"></span>
+                        </li>
+                        <li class="color-item-wrapper" style="border-color:#408082">
+                            <span class="color-item" style="background-color:#408082" color="#408082"></span>
+                        </li>
+                        <li class="color-item-wrapper" style="border-color:#420140">
+                            <span class="color-item" style="background-color:#420140" color="#420140"></span>
+                        </li>
+                        <li class="color-item-wrapper" style="border-color:#efefef">
+                            <span class="color-item" style="background-color:#efefef" color="#efefef"></span>
+                        </li>
+                        <li class="color-item-wrapper" style="border-color:#3f0100">
+                            <span class="color-item" style="background-color:#3f0100" color="#3f0100"></span>
+                        </li>
+                        <li class="color-item-wrapper" style="border-color:#814000">
+                            <span class="color-item" style="background-color:#814000" color="#814000"></span>
+                        </li>
+                        <li class="color-item-wrapper" style="border-color:#004300">
+                            <span class="color-item" style="background-color:#004300" color="#004300"></span>
+                        </li>
+                        <li class="color-item-wrapper" style="border-color:#010576">
+                            <span class="color-item" style="background-color:#010576" color="#010576"></span>
+                        </li>
+                        <li class="color-item-wrapper" style="border-color:#00003f">
+                            <span class="color-item" style="background-color:#00003f" color="#00003f"></span>
+                        </li>
+                        <li class="color-item-wrapper" style="border-color:#40027e">
+                            <span class="color-item" style="background-color:#40027e" color="#40027e"></span>
+                        </li>
+                        <li class="color-item-wrapper" style="border-color:#7c0200">
+                            <span class="color-item" style="background-color:#7c0200" color="#7c0200"></span>
+                        </li>
+                        <li class="color-item-wrapper" style="border-color:#fd8100">
+                            <span class="color-item" style="background-color:#fd8100" color="#fd8100"></span>
+                        </li>
+                        <li class="color-item-wrapper" style="border-color:#00ff04">
+                            <span class="color-item" style="background-color:#00ff04" color="#00ff04"></span>
+                        </li>
+                        <li class="color-item-wrapper" style="border-color:#02fffb">
+                            <span class="color-item" style="background-color:#02fffb" color="#02fffb"></span>
+                        </li>
+                        <li class="color-item-wrapper" style="border-color:#7e81bf">
+                            <span class="color-item" style="background-color:#7e81bf" color="#7e81bf"></span>
+                        </li>
+                        <li class="color-item-wrapper" style="border-color:#ff01fa">
+                            <span class="color-item" style="background-color:#ff01fa" color="#ff01fa"></span>
+                        </li>
+                        <li class="color-item-wrapper" style="border-color:#fe0100">
+                            <span class="color-item" style="background-color:#fe0100" color="#fe0100"></span>
+                        </li>
+                        <li class="color-item-wrapper" style="border-color:#feff00">
+                            <span class="color-item" style="background-color:#feff00" color="#feff00"></span>
+                        </li>
+                    </ul>
+                    <div class="c-tip-arrow">
+                        <em></em>
+                        <ins></ins>
+                    </div>
+                </div>
+                <div class="face sub-bar">
+                    <div class="face-content">
+                    <ul class="face-container clear-fix">
+                        <li class="face-item" face="7f62a16f51cc29b221a87ed741cb2040" extension="png" alt="微笑"></li>
+                        <li class="face-item" face="449f34831c63932bc6f816fb69222696" extension="png" alt="大笑"></li>
+                        <li class="face-item" face="84ac7709105c9e8b986e1fb080aef158" extension="png" alt="偷笑"></li>
+                        <li class="face-item" face="1360cc1b2e12fc722571584290a2b6e1" extension="png" alt="憨笑"></li>
+                        <li class="face-item" face="6628ce0328a1aec3e3688a95ebbd609d" extension="png" alt="得意"></li>
+                        <li class="face-item" face="5a2cce712902b315f98cbce1df04462a" extension="png" alt="可爱"></li>
+                        <li class="face-item" face="6c0ae5a68c041f7f339d87ba313292c5" extension="png" alt="害羞"></li>
+                        <li class="face-item" face="576f76513e5a4c5b49b8e5323e69ff8b" extension="png" alt="乖"></li>
+                        <li class="face-item" face="43a89b8fa99b951863b9e52bbba44e63" extension="png" alt="淘气"></li>
+                        <li class="face-item" face="f0bcf27ffcef2c7d627af19d04ce7051" extension="png" alt="调皮"></li>
+                        <li class="face-item" face="b19fb15226fdc3bedb574f7f319ac4e8" extension="png" alt="流泪"></li>
+                        <li class="face-item" face="20791b0c75839b8ede1deddf7d14ea0e" extension="png" alt="大哭"></li>
+                        <li class="face-item" face="585d6a02d5209eebce230c11a84e2122" extension="png" alt="撇嘴"></li>
+                        <li class="face-item" face="65c0ea03c6ad3a2c9a56ef2f12d73d7f" extension="png" alt="闭嘴"></li>
+                        <li class="face-item" face="9c3ab5280830b24928fba2ecbfa5423c" extension="png" alt="嘘"></li>
+                        <li class="face-item" face="ec619f6b677a364aa8daca7ee088b0fc" extension="png" alt="鄙视"></li>
+                        <li class="face-item" face="ba6bd8678622db5c54cc265f78540a59" extension="png" alt="傲慢"></li>
+                        <li class="face-item" face="5d2bba3091be38970563d3e4bd04e8fb" extension="png" alt="白眼"></li>
+                        <li class="face-item" face="eba03f67b8a667bb16b20fd32b9b51bd" extension="png" alt="思考"></li>
+                        <li class="face-item" face="915fb0149e684a7f1f40f568aac87a74" extension="png" alt="困"></li>
+                        <li class="face-item" face="80f75e10b4fb8c46df80b1595c7d50cb" extension="png" alt="睡"></li>
+                        <li class="face-item" face="49c0997a2807cf28300e84fb87605efe" extension="png" alt="汗"></li>
+                        <li class="face-item" face="e162da21d7bde950367501958629aa18" extension="png" alt="尴尬"></li>
+                        <li class="face-item" face="f59bf80e1ba9111f4ee819fddec977d5" extension="png" alt="惊讶"></li>
+                        <li class="face-item" face="6594322f85d0a78caa55c95182937a43" extension="png" alt="惊恐"></li>
+                        <li class="face-item" face="6dd384507524a14951b2978ce45d427c" extension="png" alt="疑问"></li>
+                        <li class="face-item" face="d2b9f0ebae2898bab340a464f10a678c" extension="png" alt="晕"></li>
+                        <li class="face-item" face="3b1f5191cc6f6aab3fbc161f5ca95586" extension="png" alt="敲打"></li>
+                        <li class="face-item" face="6b562d094d2f23a5f41ba823ded02da2" extension="png" alt="难过"></li>
+                        <li class="face-item" face="10dbd6c0cf8d5af5c70fdf4eb7f98692" extension="png" alt="委屈"></li>
+                        <li class="face-item" face="ce277e2ca55543eb7eb467c5d397e10d" extension="png" alt="色"></li>
+                        <li class="face-item" face="d652ac7ff1ac8c0d4ad9d00e9847fccc" extension="png" alt="抓狂"></li>
+                        <li class="face-item" face="42c9ab68d510f0dfa35e4df3abf6a5fa" extension="png" alt="愤怒"></li>
+                        <li class="face-item" face="8e972967218fa060a8fcda1a54fe025b" extension="png" alt="吐"></li>
+                        <li class="face-item" face="2a3a3cf6d0b28d889fd249e3d68afae2" extension="png" alt="衰"></li>
+                        <li class="face-item" face="9912488906a31978d1c93150e7da65be" extension="png" alt="再见"></li>
+                        <li class="face-item" face="034650679ea520821ace18816fd309b8" extension="png" alt="滑稽"></li>
+                        <li class="face-item" face="f34d9586f86e135e4ce5c9630c9f6a25" extension="png" alt="高兴"></li>
+                        <li class="face-item" face="a5b36a0ac2cf38463e9e6486fc3d6b70" extension="png" alt="完美"></li>
+                        <li class="face-item" face="f5ddc76e56c8221e61c58b72e37f9829" extension="png" alt="坏笑"></li>
+                        <li class="face-item" face="2f25b6cbc178c5811743bb3f3fe95eb6" extension="png" alt="惊呆"></li>
+                        <li class="face-item" face="b6405f17ae2596f6065a8b1da7d81da4" extension="png" alt="嘿哈"></li>
+                        <li class="face-item" face="b0955a756bc690b02fc6c82cb5663be6" extension="png" alt="机智"></li>
+                        <li class="face-item" face="6a91ab45cab3ce482b2069f3a8bb43aa" extension="png" alt="走你"></li>
+                        <li class="face-item" face="e33ec7875595d23dfc0e70625aa839dd" extension="png" alt="捂脸"></li>
+                        <li class="face-item" face="d987e058fe2ddb9436e3f3af3aeee43c" extension="png" alt="戳脸"></li>
+                        <li class="face-item" face="7413c233681ce9f2a7d3d0e22d4ba632" extension="png" alt="爱心"></li>
+                        <li class="face-item" face="004a9411849aa007b843d4bc74ba2db3" extension="png" alt="鼻血"></li>
+                        <li class="face-item" face="1e04fa2b77173ad5419c58cb2a4c944c" extension="png" alt="奋斗"></li>
+                        <li class="face-item" face="14f8db64e92d43e0ee4bb1c55553e399" extension="png" alt="棒棒哒"></li>
+                        <li class="face-item" face="0246fb8175a9e47e859593f6ed19e7f3" extension="png" alt="摸头"></li>
+                        <li class="face-item" face="54207c894ff556b1778eeb90893e196a" extension="png" alt="NO"></li>
+                        <li class="face-item" face="73d4ace4f6bafb7c48f7d4ea62da5e27" extension="png" alt="沉思"></li>
+                        <li class="face-item" face="f985e5a0d5f5e7ec7d0e02f229164816" extension="png" alt="抠鼻"></li>
+                        <li class="face-item" face="4fc4e9bf21b34df2170c2add1a215162" extension="png" alt="生病"></li>
+                        <li class="face-item" face="481fa659924b4dd3c692556fe1e42349" extension="png" alt="口罩"></li>
+                        <li class="face-item" face="e0275fff10e8225e5618e7baf95b6296" extension="png" alt="左拥抱"></li>
+                        <li class="face-item" face="e1e8ac2d122dca4fe77644994a815613" extension="png" alt="右拥抱"></li>
+                        <li class="face-item" face="fd1457cad55db7e7dc7970acb24e5832" extension="png" alt="闪人"></li>
+                        <li class="face-item" face="dc45642dc5aae41541fff2634a08a647" extension="png" alt="刀"></li>
+                        <li class="face-item" face="49106010c742c69727221622283131a9" extension="png" alt="吻"></li>
+                        <li class="face-item" face="6b278bb3a2acaa362311551208c22de7" extension="png" alt="爱情"></li>
+                        <li class="face-item" face="3693411aa84d66f7ff840993acc9c753" extension="png" alt="心碎"></li>
+                        <li class="face-item" face="f5d3fd06ead545b5abd48e367195b1fb" extension="png" alt="鲜花"></li>
+                        <li class="face-item" face="a91f909f9d1a1fdca0c0eaf8f232eb1f" extension="png" alt="枯萎"></li>
+                        <li class="face-item" face="3e2ec2a092127757f89a771762d2103f" extension="png" alt="胜利"></li>
+                        <li class="face-item" face="5cd4259ce1239fb13b1b026826ae5cd8" extension="png" alt="OK"></li>
+                        <li class="face-item" face="b9149566ccf3b7937ab2f0a639e681f5" extension="png" alt="大拇指"></li>
+                        <li class="face-item" face="6697732553bbee2d1760b2d889220eb2" extension="png" alt="弱"></li>
+                        <li class="face-item" face="5537920713864c60f86dcba194b459ef" extension="png" alt="握手"></li>
+                        <li class="face-item" face="bf4bc9d82fd8365319e4f4fca8732e26" extension="png" alt="蛋糕"></li>
+                        <li class="face-item" face="bb3b630c7189b362d39905a6b10f4e25" extension="png" alt="咖啡"></li>
+                        <li class="face-item" face="c6796331da7ebed681d6adcfdc1d9e60" extension="png" alt="吃饭"></li>
+                        <li class="face-item" face="5e54aaa520e07cc35c92594aa85c3ca5" extension="png" alt="太阳"></li>
+                        <li class="face-item" face="0e3a50af997063d132bb115e98cf9783" extension="png" alt="月亮"></li>
+                        <li class="face-item" face="f4963b986d487f24100ac41b4d36e4b6" extension="png" alt="星星"></li>
+                        <li class="face-item" face="78d7c5e2e0dfb11fce910a45019bc52c" extension="png" alt="便便"></li>
+                        <li class="face-item" face="24b03c84c57ced0bea595c264bd7d9f1" extension="png" alt="猪头"></li>
+                        <li class="face-item" face="e6af94688a6f70062c75a3cf3f8dfdf5" extension="png" alt="钱"></li>
+                        <li class="face-item" face="71a6b6d3231a0ca74f2c80f6c36b81b8" extension="png" alt="Hi"></li>
+                      </ul>
+                  </div>
+                  <ins id="previewBox"></ins>
+                      <div class="c-tip-arrow">
+                          <em></em>
+                          <ins></ins>
+                      </div>
+                </div>
+                <div class="bar">
+                    <button class="btn-face" title="选择表情">发送表情</button>
+                    <button class="btn-font" title="设置字体颜色和格式">文字设置</button>
+                    <div class="btn-img">
+                        <form id="uploadForm">
+                            <input id="uploadInput" name="file" type="file" onchange="selectImage()" title="选择图片">
+                        </form>
+                    </div>
+                    <button class="btn-cut" title="捕捉屏幕">捕捉屏幕</button>
+                    <button class="btn-shake" title="发送抖屏">发送抖动</button>
+                    <script type="text/javascript">
+                        // 去Flash 屏蔽上传文件按钮
+                        if (window.Blob && window.FileReader && window.DataView) {
+                           document.write('<div id="fileUploader" class="btn-file btn-file-disabled" title="发送文件"></div>');
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <div class="input">
+
+                <div id="editor" class="editor"></div>
+
+                <div id="send-wrap" class="send">
+
+                    <button>发送</button>|<span class="hotkey-set up"></span>
+
+                    <ul class="hotkey-menu">
+                        <li data-hotkey="e" class="item-e selected">
+                            <span></span>按Enter键发送消息
+                        </li>
+                        <li data-hotkey="ce" class="item-ce">
+                            <span></span>按Ctrl+Enter键发送消息
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <!-- 解决ie6下，绝对定位元素相邻浮动元素宽度引起的不可见bug -->
+        <!-- [if IE 6]>
+        <div></div>
+        <![endif] -->
+        <!-- 收起按钮 -->
+        <div id="folder" class="unfold" style="display:none;"></div>
+    </div>
+    <!-- 音乐播放器,url:/webim_src/src/webim/swf/sound.swf -->
+    <div id="sound-container" data-swf="//p.qiao.baidu.com/cps/flash/sound.swf"></div>
+    <!-- 加载img 获取其路径 -->
+    <div style="display:none;">
+        <img id="custom" src="../webim/1610525662/asset/webim/img/custom.png">
+        <img id="sub" src="../webim/1610525662/asset/webim/img/sub-0.png">
+        <img id="fail" src="../webim/1610525662/asset/webim/img/fail.png">
+        <img id="loading" src="../webim/1610525662/asset/webim/img/loading.gif">
+        <img id="notifyIcon" src="../webim/1610525662/asset/webim/img/sub-0.png">
+        <form id="imgViewer" action="imageviewer" method="post" target="_blank">
+            <input id="imgViewerInput" name="imgsrc">
+        </form>
+        <span id="webUploaderSwf" data-swf="//p.qiao.baidu.com/cps/flash/Uploader.swf"></span>
+        
+                    <img id="company-logo" src="../static/style/images/bf68875556f441e28952851b72763e85.png">
+                <span id="company-info" data-displaylogo="1"></span>
+        <span id="customer-theme" data-themetype="0" data-customercolor="#2752e7"></span>
+        <span id="businessBanner"></span>
+        <!-- banner存在用js渲染 -->
+                <script type="text/javascript">
+        (function() {
+            var bannerData = [
+                                     {
+                        "img": "//sgoutong.baidu.com/static/style/images/4679090e0c3d47df82bc184d474ed6e1.jpg",
+                        "url": "http://www.gzlhhg.com.cn/",
+                        "riskImg": "0"
+                    }
+                                                ];
+
+            document.getElementById('businessBanner').banners = bannerData;
+        })();
+        </script>
+                <!-- 默认皮肤logo -->
+        <img id="skinLogo" src="../webim/1610525662/asset/webim/img/bridge-logo2-skin-0.png" class="custom-logo" style="width: 200px;height: auto">
+        <img id="skinLogoCustomer" src="../webim/1610525662/asset/webim/img/bridge-logo2-skin-customer.png" style="width: 0; height: 0">
+    </div>
+    <!-- 访客下载文件 -->
+    <iframe style="display:none;" id="visitorDownload" name="visitorDownload" frameborder="0"></iframe>
+    <script>
+        require(['webim/entry'], function(main) {
+            // 在全局记录entryjs开始执行的时间，用于转接打点
+            window.NB_STRAT_ENTRYJS = (new Date()).getTime();
+            main.init({"eid":"6539379","queuing":"","authToken":"bridge","siteToken":"5196f5c7139098af1814f1840832796b","urlRoot":"http://p.qiao.baidu.com/cps4/","platform":"0","tid":"-1","isGray":"false","wsUrl":"ws://p.qiao.baidu.com/cps2/websocket","route":"1","ttype":"1","vstProto":0,"likeVersion":"generic","siteid":"15072485","from":0,"authType":4,"bid":""});
+        });
+    </script>
+</body>
+</html>

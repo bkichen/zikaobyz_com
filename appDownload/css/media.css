@@ -1,0 +1,379 @@
+@media screen and (max-device-width:700px){
+	.rightul{
+		display: none;
+	}
+	
+    #first {
+    	position: relative;
+    	background: url(../img/phonebg1.jpg) no-repeat;
+		background-size: 21rem 40rem;
+    }
+	#first .firstactive{
+		display: none;
+	}
+	#first .left {
+    margin-left: 3.6rem;
+    margin-top: 50%;
+	}
+	
+	#first .left h1{
+		height: 2rem;
+		width: 14rem;
+		font-size: 2rem;
+		text-align: center;
+	}
+	#first .left h2{
+		margin-top: 0.3rem;
+		height: 0.8rem;
+		width: 16rem;
+		color: rgb(127 127 127);
+		line-height: 0.8rem;
+		font-size: 0.7rem;
+		font-family: Microsoft YaHei;
+		font-weight: lighter;
+	}
+	#first .left .cetern{
+		width: 13rem;
+		height: 5rem;
+		margin-top: 0.55rem;
+		position: relative;
+		right: 0.15rem;
+	}
+	#first .left .cetern img {
+		width: 13rem;
+		height: 5rem;
+	}
+	#first .left .foot{
+		position: relative;
+		right: 0.9rem;
+		width: 15rem;
+	}
+	#first .left .foot .footleft img {
+    width: 7rem;
+    height: 7rem;
+	}
+	
+	#first .left .foot .footright {
+    width: 7rem;
+    height: 6.9rem;
+	}
+	.ml10 {
+    margin-left: 0.3rem;
+	}
+	#first .footright .butoon {
+    width: 6rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+    font-size: 0.6rem;
+    font-family: Microsoft YaHei;
+    line-height: 3.3rem;
+    border: 0.01rem solid;
+	margin-top: 0.6rem;
+    border-color: rgb(211 211 211);
+    cursor: pointer;
+	}
+	#first .footright .butoon .mediacss{
+		position: relative;
+		bottom: 1rem;
+	}
+	#first .footright i {
+    font-size: 0.9rem;
+	}
+	#first .footright .butoon .download {
+    margin-left: 0.4rem;
+    text-align: center;
+	}
+	
+	
+	#second {
+    position: relative;
+    background: white;
+	}
+	.secondmedia{
+		position: relative;
+		top: 25%;
+	}
+	#second .title {
+		text-align: center;
+		height: 3rem;
+		width: 16rem;
+		line-height: 3rem;
+		font-size: 0.9rem;
+		margin: 0 auto;
+	}
+	
+	#second .dictum {
+    text-align: center;
+    margin-top: 0.3rem;
+    height: 3rem;
+    width: 16rem;
+    font-family: Microsoft YaHei;
+    font-size: 0.8rem;
+    line-height: 3rem;
+	margin: 0 auto;
+    color: rgb(127 127 127);
+	}
+	
+	#second .secondleft .btn1 {
+    margin-left: 2.2rem;
+    margin-top: 1.7rem;
+	}
+	.fontsize20 {
+    font-weight: bold;
+    font-size: 0.4rem;
+	}
+	#second .secondbtn {
+    width: 6rem;
+    height: 1.5rem;
+    font-family: Microsoft YaHei;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    line-height: 1.5rem;
+	
+    border-radius: 0.9rem 0rem 0.9rem 0.9rem;
+	}
+	.fontsize20 {
+		font-size: 0.6rem;
+	}
+	.fontsize16 {
+		font-size: 0.56rem;
+	}
+	#second .secondleft .btn2 {
+    margin-left: 2.2rem;
+    margin-top: 1.3rem;
+	}
+	#second .secondleft .btn3 {
+    margin-left: 2.2rem;
+    margin-top: 1.3rem;
+	}
+	
+	#second .secondright {
+    position: relative;
+    left: 2.5rem;
+	}
+	#second .secondright .btn4 {
+    margin-right: 4.7rem;
+    margin-top: 1.7rem;
+	}
+	#second .secondbtn2 {
+    width: 6rem;
+    height: 1.5rem;
+    font-family: Microsoft YaHei;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    line-height: 1.5rem;
+    border-radius: 0.9rem 0rem 0.9rem 0.9rem;
+	}
+	
+	#second .secondright .btn5{
+		margin-left: 0rem;
+		margin-top: 1.3rem;
+	}
+	#second .secondright .btn6{
+		margin-left: 0rem;
+		margin-top: 1.3rem;
+	}
+	#second .secondcetern {
+		display: none;
+	}
+	
+	
+	
+	/* 第三页 */
+	#third{
+		background: white;
+		background-size: 0rem 0rem;
+	}
+	.thirdmedia{
+		position: relative;
+		top: 22%;
+	}
+	#third .title {
+    text-align: center;
+    width: 19.2rem;
+    height: 3rem;
+	margin: 0 auto;
+    font-family: Microsoft YaHei;
+    font-size: 1rem;
+	}
+	
+	#third .dictum {
+    text-align: center;
+    width: 15rem;
+    height: 1rem;
+	margin: 0 auto;
+    font-family: Microsoft YaHei;
+    font-size: 0.7rem;
+    line-height: 1rem;
+	margin-top: 1rem;
+    color: rgb(127 127 127);
+	}
+
+	#third .mediaphone{
+		display: none;
+
+	}
+
+	
+	#third .thirdright .thirdbtn{
+	width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 50%;
+    border: 0.04rem solid rgb(198 238 254);
+	}
+	#third .thirdright .thirdbtn1 {
+		float: left;
+	margin-right: 3.04rem;
+    margin-top: 2rem;
+	}
+	.shadow1 {
+    box-shadow: 0 0 0.3rem 0.01rem rgb(243 243 243);
+	}
+	
+	#third .thirdright .thirdbtn2 {
+	float: right;
+	position: relative;
+    bottom: 0rem;
+	top: 2rem;
+    margin-left: 0rem;
+	margin-right: 3rem;
+	}
+	
+	#third .thirdright .thirdbtn3 {
+    margin-top: 1rem;
+    margin-left: 0rem;
+	float: left;
+	}
+	#third .thirdright .thirdbtn4 {
+	float: right;
+    position: relative;
+    bottom: 0rem;
+	top: 1rem;
+	margin-left: 0rem;
+	margin-right: 2.5rem;
+	}
+	#third .thirdright img {
+	position: relative;
+	top: 0.8rem;
+    width: 3rem;
+    height: 2.5rem;
+	}
+	#third .thirdright .img3 {
+	position: relative;
+	right: 0.3rem;
+	}
+	#third .thirdright .thirdbtn .text {
+    display: inline-block;
+    position: relative;
+	top: 0.5rem;
+    bottom: 0rem;
+    width: 4rem;
+    height: 1.5rem;
+    font-size: 0.7rem;
+	}
+	
+	
+	#fouth {
+		position: relative;
+		background: url(../img/background4_02.jpg) no-repeat;
+		background-size: 35rem 50rem;
+	}
+	#fouth .left{
+		position: relative;
+		margin-left: 0rem;
+		top: 12%;
+	}
+	#fouth .xzapp{
+		display: block;
+		font-size: 1rem;
+	}
+	#fouth .fouthactive{
+		display: none;
+	}
+	#fouth .left h1{
+		height: 2rem;
+		width: 19.2rem;
+		font-size: 1.5rem;
+		line-height: 2rem;
+		text-align: center;
+	}
+	#fouth .left h2{
+		margin-top: 0.3rem;
+		height: 0.9rem;
+		line-height: 0.9rem;
+		width: 19.2rem;
+		text-align: center;
+		color: rgb(127 127 127);
+		line-height: 0.8rem;
+		font-size: 0.9rem;
+		font-family: Microsoft YaHei;
+		font-weight: lighter;
+	}
+	#fouth .left .cetern{
+		width: 19.2rem;
+		text-align: center;
+		height: 5rem;
+		margin-top: 0.55rem;
+		position: relative;
+		right: 0.15rem;
+	}
+	#fouth .left .cetern img {
+		width: 13rem;
+		height: 5rem;
+	}
+	#fouth .left .foot{
+		width: 19.2rem;
+		text-align: center;
+	}
+	#fouth .left .foot .footleft{
+		float: none;
+	}
+	#fouth .left .foot .footleft img {
+	width: 7rem;
+	height: 7rem;
+	}
+	
+	#fouth .left .foot .footright {
+	margin: 0 auto;
+	width: 19.2rem;
+	height: 6.9rem;
+	margin-left: 6.6rem;
+	margin-top: 1rem;
+	text-align: left;
+	float: none;
+	}
+	
+
+	
+	.ml10 {
+	margin-left: 0.3rem;
+	}
+	#fouth .footright .butoon {
+	width: 6rem;
+	height: 1.5rem;
+	border-radius: 1rem;
+	font-size: 0.6rem;
+	font-family: Microsoft YaHei;
+	line-height: 1.4rem;
+	margin-right: 0;
+	border: 0.01rem solid;
+	margin-top: 0.6rem;
+	border-color: rgb(211 211 211);
+	cursor: pointer;
+	}
+	#fouth .footright .butoon .mediacss{
+		position: relative;
+		bottom: 1rem;
+	}
+	#fouth .footright i {
+	font-size: 0.9rem;
+	}
+	#fouth .footright .butoon .download {
+	margin-left: 0.4rem;
+	text-align: center;
+	}
+}
